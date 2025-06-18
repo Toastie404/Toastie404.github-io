@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>aLiS Arcade - Game Menu</title>
+    <style>
+        body {
+            background: #60048c;
+            color: #fff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #fbc02d;
+            color: #333;
+            padding: 20px;
+            font-size: 2rem;
+            font-weight: bold;
+            text-shadow: 1px 1px 1px #00000060;
+        }
+
+        .game-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 20px;
+            padding: 30px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .game-tile {
+            background: #2196f3;
+            border-radius: 12px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+            .game-tile:hover {
+                transform: scale(1.05);
+                box-shadow: 0 0 15px #fff;
+            }
+
+            .game-tile img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+
+        .game-label {
+            padding: 10px;
+            font-weight: bold;
+            background: #1976d2;
+        }
+
+        footer {
+            margin-top: 40px;
+            color: #fffde7;
+            font-size: 0.9rem;
+        }
+
+        a {
+            color: #fffde7;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+            a:hover {
+                text-decoration: underline;
+            }
+    </style>
+</head>
+<body>
+
+    <header>aLiS Arcade</header>
+
+    <main>
+        <div class="game-grid">
+            <div class="game-tile" onclick="location.href='freegear.html'">
+                <img src="thumbnails/freegear.jpg" alt="Freegear" />
+                <div class="game-label">Freegear</div>
+            </div>
+            <div class="game-tile" onclick="location.href='chasm.html'">
+                <img src="thumbnails/chasm.jpg" alt="chasm" />
+                <div class="game-label">Chasm</div>
+            </div>
+            <div class="game-tile" onclick="location.href='learn2fly.html'">
+                <img src="thumbnails/learn2fly.jpg" alt="learn2fly" />
+                <div class="game-label">learn to fly</div>
+            </div>
+            <div class="game-tile" onclick="location.href='flight.html'">
+                <img src="thumbnails/flight.jpg" alt="Game 3" />
+                <div class="game-label">Flight</div>
+            </div>
+            <div class="game-tile" onclick="location.href='sfh2.html'">
+                <img src="thumbnails/sfh2.jpg" alt="Game 4" />
+                <div class="game-label">Strike Force Heroes 2</div>
+            </div>
+            <div class="game-tile" onclick="location.href='fireboywatergirl1.html'">
+                <img src="thumbnails/fbwg1.jpg" alt="fbwg1" />
+                <div class="game-label">Fireboy and Watergirl In the forest Temple</div>
+            </div>
+            <div class="game-tile" onclick="location.href='game6.html'">
+                <img src="thumbnails/game6.jpg" alt="Game 6" />
+                <div class="game-label">Game 6</div>
+            </div>
+            <div class="game-tile" onclick="location.href='game7.html'">
+                <img src="thumbnails/game7.jpg" alt="Game 7" />
+                <div class="game-label">Game 7</div>
+            </div>
+            <div class="game-tile" onclick="location.href='game8.html'">
+                <img src="thumbnails/game8.jpg" alt="Game 8" />
+                <div class="game-label">Game 8</div>
+            </div>
+            <div class="game-tile" onclick="location.href='game9.html'">
+                <img src="thumbnails/game9.jpg" alt="Game 9" />
+                <div class="game-label">Game 9</div>
+            </div>
+            <div class="game-tile" onclick="location.href='game10.html'">
+                <img src="thumbnails/game10.jpg" alt="Game 10" />
+                <div class="game-label">Game 10</div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        Made by Isis & Alex | <a href="https://ruffle.rs/" target="_blank">Powered by Ruffle</a>
+    </footer>
+
+</body>
+</html>
